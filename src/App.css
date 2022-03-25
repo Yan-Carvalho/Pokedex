@@ -1,38 +1,86 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* @font-face {
+  font-family: hollow;
+  src: ('../Pokemon\ Hollow.ttf');
+} */
+.container{
+  width: 100vw;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  background: rgba(290, 142, 139,98 );
+}
+.content{
+  width: 100%;
+  height: 100%;
+  padding-top:30px ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow-x: hidden;
+  font-size: 1.4em;
+  /* background-color: rgba(290, 45, 48, 98); */
+}
+/* .content h1{
+  font-family:
+} */
+.pokemon{
+  padding-top: 30px;
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.pokemon input{
+  width: 200px;
+  height: 35px;
+  padding: 4px;
+  letter-spacing: 1px;
+  font-size: 0.8em;
+}
+.pokemon button{
+  width: 100px;
+  height: 35px;
+  font-size: 0.8em;
 }
 
-.App-link {
-  color: #61dafb;
+
+
+
+.pokeStats{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(221, 224, 226);
+  border-radius: 40px 40px 0px 0px;
+  padding: 5px;
+}
+.pokeStats img{
+  width: 200px;
+  background-color: white;
+  border-radius: 50%;
+}
+.pokeStats .stats{
+  padding: 10px 0 10px 20px;
+  margin-top: 5px;
+  width: 500px;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 20px;
+  background-color: red;
+  border-radius: 0px 40px 0px 40px;
+  background: #C3A5FF;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+
+
+
