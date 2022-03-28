@@ -1,11 +1,15 @@
 import {useState} from 'react'
 import api from './api';
 import './App.css';
+// import axios from 'axios'
 
 
 function App() {
   const[input, setInput] = useState('')
   const[pokemon, setPokemon] = useState({})
+//   const api = axios.create({
+//     baseURL: "https://pokeapi.co"
+// })
 
   async function handleSearch(){
     var apiCallString = "https://pokeapi.co/api/v2/pokemon/"+input
@@ -18,8 +22,9 @@ function App() {
       try{
         await api.get(apiCallString).then(function(response){
           setPokemon(response.data)
+          console.log(response.data)
         })}catch{
-        alert("erro")
+        // alert("erro")
         setInput("")
       }
   }
