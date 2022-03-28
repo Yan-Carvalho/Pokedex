@@ -37,7 +37,7 @@ function App() {
           <div className='containerInput'>
             <input
             type="text"
-            placeholder='Digite seu nickname...'
+            placeholder='Qual é o pokemon...'
             value={input}
             onChange={(e) => setInput(e.target.value)}
             />
