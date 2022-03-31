@@ -78,7 +78,7 @@
   font-weight: 700;
 }
 
-@media  screen and (max-width: 767px){
+@media  screen and (max-width: 500px){
   .content{
     padding-top: 0;
   }
@@ -92,14 +92,14 @@
   .pokeStats{
     padding: 0px;
   }
-  .pokeStats .stats{
+  .pokeStats .stats {
     width: 98vw;
-    height: 45vh;
+    height: 46vh;
     padding: 15px;
     margin: 5px;
     font-size: 0.9em;
     grid-template-columns: repeat(1,1fr);
-  }
+}
   .pokeStats img{
     margin-top: 30px;
   }
